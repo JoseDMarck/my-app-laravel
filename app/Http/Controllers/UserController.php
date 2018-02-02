@@ -22,7 +22,7 @@ class UserController extends Controller{
 
 
     public function show($id){
-        return "Detalles del usuario: {$id}";
+        return view('users-show', compact('id'));
     }
 
     
@@ -30,10 +30,6 @@ class UserController extends Controller{
     public function create(){
         return 'Crear usuario Nuevo';
     }
-
-
-    
-
 
 
 }// UserController
